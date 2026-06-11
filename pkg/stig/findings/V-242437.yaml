@@ -1,0 +1,12 @@
+category: CONFIGURATION MANAGEMENT
+check_field: pod-security-policy
+check_type: manual
+cntr_id: CNTR-K8-002600
+description: PodSecurityPolicy is removed in K8s 1.25+. Pod Security Standards/Admission
+  replaces it.
+expected_value: n/a
+nist_controls: CM-6
+remediation: Use Pod Security Admission (PSA) labels on namespaces instead of PodSecurityPolicy
+severity: CAT II
+title: Kubernetes must have a pod security policy set
+vid: V-242437

@@ -1,0 +1,11 @@
+category: SYSTEM AND COMMUNICATIONS PROTECTION
+check_field: kubelet.client-ca-file
+check_type: node_config
+cntr_id: CNTR-K8-001420
+description: Kubelet must have --client-ca-file configured
+expected_value: set
+nist_controls: SC-8
+remediation: Set authentication.x509.clientCAFile in /var/lib/kubelet/config.yaml
+severity: CAT II
+title: Kubelet SSL Certificate Authority must be set
+vid: V-242420

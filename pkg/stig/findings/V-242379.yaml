@@ -1,0 +1,12 @@
+category: ACCESS CONTROL
+check_field: etcd.auto-tls
+check_type: cluster_api
+cntr_id: CNTR-K8-000180
+description: etcd must have --auto-tls=false and explicit cert/key files configured
+expected_value: 'false'
+nist_controls: SC-8
+remediation: Set --auto-tls=false in etcd configuration and configure --cert-file
+  and --key-file
+severity: CAT II
+title: etcd must use TLS to protect confidentiality
+vid: V-242379

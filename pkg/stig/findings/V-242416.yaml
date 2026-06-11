@@ -1,0 +1,13 @@
+category: ACCESS CONTROL
+check_field: apiserver.encryption-provider-config
+check_type: cluster_api
+cntr_id: CNTR-K8-001162
+description: API Server must have --encryption-provider-config set to encrypt secrets
+  at rest
+expected_value: set
+nist_controls: SC-28
+remediation: Create an EncryptionConfiguration and set --encryption-provider-config
+  in kube-apiserver manifest
+severity: CAT II
+title: Secrets must be encrypted at rest
+vid: V-242416

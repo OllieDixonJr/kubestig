@@ -1,0 +1,11 @@
+category: ACCESS CONTROL
+check_field: etcd.peer-auto-tls
+check_type: cluster_api
+cntr_id: CNTR-K8-000190
+description: etcd must have --peer-auto-tls=false
+expected_value: 'false'
+nist_controls: SC-8
+remediation: Set --peer-auto-tls=false and configure peer TLS certificates in etcd
+severity: CAT II
+title: etcd must use TLS for peer communication
+vid: V-242380

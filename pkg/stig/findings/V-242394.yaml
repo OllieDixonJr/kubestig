@@ -1,0 +1,11 @@
+category: ACCESS CONTROL
+check_field: worker-sshd-enabled
+check_type: node_config
+cntr_id: CNTR-K8-000410
+description: sshd service must not be enabled on worker nodes
+expected_value: 'false'
+nist_controls: AC-17
+remediation: systemctl disable sshd on worker nodes
+severity: CAT II
+title: Worker nodes must not have sshd service enabled
+vid: V-242394

@@ -1,0 +1,11 @@
+category: ACCESS CONTROL
+check_field: scheduler.bind-address
+check_type: cluster_api
+cntr_id: CNTR-K8-000300
+description: Scheduler must bind to 127.0.0.1
+expected_value: 127.0.0.1
+nist_controls: AC-6
+remediation: Set --bind-address=127.0.0.1 in /etc/kubernetes/manifests/kube-scheduler.yaml
+severity: CAT II
+title: Scheduler must have secure binding
+vid: V-242384

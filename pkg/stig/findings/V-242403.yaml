@@ -1,0 +1,11 @@
+category: AUDIT AND ACCOUNTABILITY
+check_field: apiserver.audit-log-path
+check_type: cluster_api
+cntr_id: CNTR-K8-000610
+description: API Server must have --audit-log-path configured
+expected_value: set
+nist_controls: AU-3, AU-9
+remediation: Set --audit-log-path to a valid file path in kube-apiserver manifest
+severity: CAT II
+title: API Server must have an audit log path set
+vid: V-242403

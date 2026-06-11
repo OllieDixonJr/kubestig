@@ -1,0 +1,11 @@
+category: SYSTEM AND COMMUNICATIONS PROTECTION
+check_field: etcd.client-cert-auth
+check_type: cluster_api
+cntr_id: CNTR-K8-001450
+description: etcd must have --client-cert-auth=true
+expected_value: 'true'
+nist_controls: SC-8
+remediation: Set --client-cert-auth=true in etcd configuration
+severity: CAT II
+title: etcd must enable client authentication
+vid: V-242423

@@ -1,0 +1,11 @@
+category: ACCESS CONTROL
+check_field: apiserver.anonymous-auth
+check_type: cluster_api
+cntr_id: CNTR-K8-000360
+description: API Server must have --anonymous-auth=false
+expected_value: 'false'
+nist_controls: AC-14, AC-6
+remediation: Edit /etc/kubernetes/manifests/kube-apiserver.yaml and set --anonymous-auth=false
+severity: CAT I
+title: API Server anonymous authentication must be disabled
+vid: V-242390

@@ -1,0 +1,12 @@
+category: ACCESS CONTROL
+check_field: kubelet.static-pod-path
+check_type: node_config
+cntr_id: CNTR-K8-000440
+description: The staticPodPath must not be set in kubelet configuration
+expected_value: not-set
+nist_controls: CM-7
+remediation: 'Remove staticPodPath from /var/lib/kubelet/config.yaml (note: control
+  plane nodes need this for static pods)'
+severity: CAT I
+title: Kubelet staticPodPath must not enable static pods
+vid: V-242397

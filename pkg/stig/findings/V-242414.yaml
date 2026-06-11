@@ -1,0 +1,12 @@
+category: CONFIGURATION MANAGEMENT
+check_field: privileged-host-ports
+check_type: workload
+cntr_id: CNTR-K8-000960
+description: No user pods should map to host ports below 1024
+expected_value: none
+nist_controls: CM-7
+remediation: Remove hostPort mappings below 1024 from pod specs or use a service/ingress
+  instead
+severity: CAT II
+title: Cluster must use non-privileged host ports for user pods
+vid: V-242414

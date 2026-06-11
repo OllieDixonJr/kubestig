@@ -1,0 +1,12 @@
+category: ACCESS CONTROL
+check_field: apiserver.secure-port
+check_type: cluster_api
+cntr_id: CNTR-K8-000350
+description: API Server --secure-port must not be set to 0
+expected_value: not-zero
+nist_controls: AC-6
+remediation: Ensure --secure-port is set to a non-zero value (default 6443) in kube-apiserver
+  manifest
+severity: CAT II
+title: API Server secure port must be set
+vid: V-242389

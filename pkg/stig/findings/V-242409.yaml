@@ -1,0 +1,11 @@
+category: CONFIGURATION MANAGEMENT
+check_field: controller-manager.profiling
+check_type: cluster_api
+cntr_id: CNTR-K8-000910
+description: Controller Manager must have --profiling=false
+expected_value: 'false'
+nist_controls: CM-7
+remediation: Add --profiling=false to /etc/kubernetes/manifests/kube-controller-manager.yaml
+severity: CAT II
+title: Controller Manager profiling must be disabled
+vid: V-242409

@@ -1,0 +1,12 @@
+category: IDENTIFICATION AND AUTHENTICATION
+check_field: secrets-as-env-vars
+check_type: workload
+cntr_id: CNTR-K8-001160
+description: Secrets must be mounted as volumes, not passed as environment variables
+expected_value: none
+nist_controls: IA-5, SC-28
+remediation: Change pod specs to use volume mounts for secrets instead of envFrom
+  or env with secretKeyRef
+severity: CAT II
+title: Secrets must not be stored as environment variables
+vid: V-242415

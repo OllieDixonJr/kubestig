@@ -1,0 +1,12 @@
+category: CONFIGURATION MANAGEMENT
+check_field: workloads-in-default-namespace
+check_type: workload
+cntr_id: CNTR-K8-000290
+description: No user workloads should run in kube-system, kube-public, or default
+  namespaces
+expected_value: none
+nist_controls: CM-7
+remediation: Move user workloads to dedicated namespaces
+severity: CAT II
+title: User-managed resources must be in dedicated namespaces
+vid: V-242383

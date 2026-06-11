@@ -1,0 +1,11 @@
+category: ACCESS CONTROL
+check_field: kubelet.authorization-mode
+check_type: node_config
+cntr_id: CNTR-K8-000380
+description: Kubelet must use Webhook authorization mode
+expected_value: Webhook
+nist_controls: AC-6
+remediation: Set authorization.mode=Webhook in /var/lib/kubelet/config.yaml
+severity: CAT I
+title: Kubelet must enable explicit authorization
+vid: V-242392

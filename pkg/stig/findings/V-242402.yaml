@@ -1,0 +1,12 @@
+category: AUDIT AND ACCOUNTABILITY
+check_field: apiserver.audit-policy-file
+check_type: cluster_api
+cntr_id: CNTR-K8-000700
+description: API Server must have --audit-policy-file configured
+expected_value: set
+nist_controls: AU-3, AU-12
+remediation: Create an audit policy file and set --audit-policy-file in kube-apiserver
+  manifest
+severity: CAT II
+title: API Server must have an audit policy set
+vid: V-242402

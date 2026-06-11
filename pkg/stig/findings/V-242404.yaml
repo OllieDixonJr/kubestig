@@ -1,0 +1,11 @@
+category: CONFIGURATION MANAGEMENT
+check_field: kubelet.hostname-override
+check_type: node_config
+cntr_id: CNTR-K8-000850
+description: The --hostname-override flag must not be set on kubelets
+expected_value: not-set
+nist_controls: CM-6
+remediation: Remove --hostname-override from kubelet arguments
+severity: CAT II
+title: Kubelet must deny hostname override
+vid: V-242404

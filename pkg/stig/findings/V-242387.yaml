@@ -1,0 +1,11 @@
+category: ACCESS CONTROL
+check_field: kubelet.read-only-port
+check_type: node_config
+cntr_id: CNTR-K8-000330
+description: Kubelet read-only port (10255) must be set to 0
+expected_value: '0'
+nist_controls: AC-6
+remediation: Set --read-only-port=0 in kubelet configuration or /var/lib/kubelet/config.yaml
+severity: CAT I
+title: Kubelet readOnlyPort must be disabled
+vid: V-242387

@@ -1,0 +1,11 @@
+category: CONFIGURATION MANAGEMENT
+check_field: manifest-ownership
+check_type: node_config
+cntr_id: CNTR-K8-000860
+description: Files in /etc/kubernetes/manifests must be owned by root:root
+expected_value: root:root
+nist_controls: CM-5
+remediation: chown root:root /etc/kubernetes/manifests/*.yaml
+severity: CAT II
+title: Kubernetes manifests must be owned by root
+vid: V-242405

@@ -1,0 +1,11 @@
+category: SYSTEM AND COMMUNICATIONS PROTECTION
+check_field: apiserver.tls-cert-file
+check_type: cluster_api
+cntr_id: CNTR-K8-001440
+description: API Server must have --tls-cert-file and --tls-private-key-file set
+expected_value: set
+nist_controls: SC-8
+remediation: Set --tls-cert-file and --tls-private-key-file in kube-apiserver manifest
+severity: CAT II
+title: API Server must have a certificate for communication
+vid: V-242422

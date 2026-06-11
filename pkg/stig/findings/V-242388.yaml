@@ -1,0 +1,11 @@
+category: ACCESS CONTROL
+check_field: apiserver.insecure-bind-address
+check_type: cluster_api
+cntr_id: CNTR-K8-000350
+description: The --insecure-bind-address flag must not be set on the API server
+expected_value: not-set
+nist_controls: AC-6
+remediation: Remove --insecure-bind-address from /etc/kubernetes/manifests/kube-apiserver.yaml
+severity: CAT I
+title: API Server must not have insecure bind address set
+vid: V-242388

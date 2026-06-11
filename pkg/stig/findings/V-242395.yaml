@@ -1,0 +1,11 @@
+category: ACCESS CONTROL
+check_field: dashboard-deployed
+check_type: workload
+cntr_id: CNTR-K8-000420
+description: The Kubernetes dashboard should not be deployed
+expected_value: 'false'
+nist_controls: CM-7
+remediation: 'Remove the Kubernetes dashboard: kubectl delete ns kubernetes-dashboard'
+severity: CAT II
+title: Kubernetes dashboard must not be enabled
+vid: V-242395

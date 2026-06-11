@@ -1,0 +1,12 @@
+category: CONFIGURATION MANAGEMENT
+check_field: manifest-permissions
+check_type: node_config
+cntr_id: CNTR-K8-000900
+description: Files in /etc/kubernetes/manifests must have permissions 644 or more
+  restrictive
+expected_value: '644'
+nist_controls: CM-5
+remediation: chmod 644 /etc/kubernetes/manifests/*.yaml
+severity: CAT II
+title: Manifest files must have least privileges
+vid: V-242408

@@ -1,0 +1,11 @@
+category: CONFIGURATION MANAGEMENT
+check_field: kubelet-config-permissions
+check_type: node_config
+cntr_id: CNTR-K8-000890
+description: Kubelet configuration file must have permissions 644 or more restrictive
+expected_value: '644'
+nist_controls: CM-5
+remediation: chmod 644 /var/lib/kubelet/config.yaml
+severity: CAT II
+title: KubeletConfiguration file permissions must be 644 or more restrictive
+vid: V-242407

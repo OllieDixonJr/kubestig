@@ -1,0 +1,11 @@
+category: ACCESS CONTROL
+check_field: controller-manager.bind-address
+check_type: cluster_api
+cntr_id: CNTR-K8-000310
+description: Controller Manager must bind to 127.0.0.1
+expected_value: 127.0.0.1
+nist_controls: AC-6
+remediation: Set --bind-address=127.0.0.1 in /etc/kubernetes/manifests/kube-controller-manager.yaml
+severity: CAT II
+title: Controller Manager must have secure binding
+vid: V-242385

@@ -1,0 +1,11 @@
+category: ACCESS CONTROL
+check_field: controller-manager.tls-min-version
+check_type: cluster_api
+cntr_id: CNTR-K8-000150
+description: Controller Manager must have --tls-min-version=VersionTLS12 or VersionTLS13
+expected_value: VersionTLS12
+nist_controls: SC-8, SC-23
+remediation: Add --tls-min-version=VersionTLS12 to /etc/kubernetes/manifests/kube-controller-manager.yaml
+severity: CAT II
+title: Controller Manager must use TLS 1.2 at minimum
+vid: V-242376

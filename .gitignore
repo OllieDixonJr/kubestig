@@ -1,0 +1,39 @@
+# Compiled binaries / build output
+/kubestig
+/kubestig.exe
+/kubestig-linux
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Go test & coverage artifacts
+*.test
+*.out
+coverage.*
+
+# Go workspace
+go.work
+go.work.sum
+
+# Local scan output produced by the tool
+*.ckl
+*.ckl.json
+/out/
+/dist/
+
+# Kube / secrets that may sit in the working dir
+kubeconfig
+*.kubeconfig
+.kube/
+
+# OS files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Editor / IDE
+.idea/
+.vscode/
+*.swp
+*~

@@ -1,0 +1,11 @@
+category: ACCESS CONTROL
+check_field: kubelet.anonymous-auth
+check_type: node_config
+cntr_id: CNTR-K8-000370
+description: Kubelet must have anonymous authentication disabled
+expected_value: 'false'
+nist_controls: AC-14
+remediation: Set authentication.anonymous.enabled=false in /var/lib/kubelet/config.yaml
+severity: CAT I
+title: Kubelet anonymous authentication must be disabled
+vid: V-242391

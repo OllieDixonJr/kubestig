@@ -1,0 +1,12 @@
+category: SYSTEM AND COMMUNICATIONS PROTECTION
+check_field: apiserver.tls-cipher-suites
+check_type: cluster_api
+cntr_id: CNTR-K8-001400
+description: API Server must have --tls-cipher-suites set to approved ciphers
+expected_value: set
+nist_controls: SC-8
+remediation: Set --tls-cipher-suites=TLS_AES_128_GCM_SHA256,TLS_AES_256_GCM_SHA384,TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+  in kube-apiserver manifest
+severity: CAT II
+title: API Server must use approved cipher suites
+vid: V-242418

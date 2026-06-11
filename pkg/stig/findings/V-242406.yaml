@@ -1,0 +1,11 @@
+category: CONFIGURATION MANAGEMENT
+check_field: kubelet-config-ownership
+check_type: node_config
+cntr_id: CNTR-K8-000880
+description: Kubelet configuration file must be owned by root:root
+expected_value: root:root
+nist_controls: CM-5
+remediation: chown root:root /var/lib/kubelet/config.yaml
+severity: CAT II
+title: KubeletConfiguration file must be owned by root
+vid: V-242406

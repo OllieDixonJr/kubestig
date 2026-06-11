@@ -1,0 +1,11 @@
+category: ACCESS CONTROL
+check_field: controller-manager.use-service-account-credentials
+check_type: cluster_api
+cntr_id: CNTR-K8-000220
+description: The Controller Manager must use --use-service-account-credentials=true
+expected_value: 'true'
+nist_controls: AC-6
+remediation: Edit /etc/kubernetes/manifests/kube-controller-manager.yaml and add --use-service-account-credentials=true
+severity: CAT I
+title: Controller Manager must create unique service accounts
+vid: V-242381

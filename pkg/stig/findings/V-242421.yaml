@@ -1,0 +1,11 @@
+category: SYSTEM AND COMMUNICATIONS PROTECTION
+check_field: controller-manager.root-ca-file
+check_type: cluster_api
+cntr_id: CNTR-K8-001430
+description: Controller Manager must have --root-ca-file configured
+expected_value: set
+nist_controls: SC-8
+remediation: Set --root-ca-file in /etc/kubernetes/manifests/kube-controller-manager.yaml
+severity: CAT II
+title: Controller Manager SSL Certificate Authority must be set
+vid: V-242421

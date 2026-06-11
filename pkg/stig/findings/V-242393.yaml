@@ -1,0 +1,11 @@
+category: ACCESS CONTROL
+check_field: worker-sshd-running
+check_type: node_config
+cntr_id: CNTR-K8-000400
+description: sshd service must not be running on worker nodes
+expected_value: 'false'
+nist_controls: AC-17
+remediation: systemctl stop sshd && systemctl disable sshd on worker nodes
+severity: CAT II
+title: Worker nodes must not have sshd service running
+vid: V-242393
