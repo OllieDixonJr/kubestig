@@ -6,7 +6,12 @@ script are embedded at compile time, so you can copy the built `kubestig` anywhe
 (a bastion, an air-gapped enclave) without dragging the repo along.
 
 There are two ways to build: with a local Go toolchain, or inside a container if
-you don't have (or can't install) Go.
+you don't have (or can't install) Go. If you just want the binary and already
+have Go, you can skip the clone entirely:
+
+```bash
+go install github.com/OllieDixonJr/kubestig/cmd/kubestig@latest
+```
 
 ---
 
