@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="KubeSTIG logo, single color">
+  <!-- Single-color variant: inherits currentColor when inlined; the padlock is
+       knocked out of the mark via mask so it works on any background. -->
+  <defs>
+    <mask id="lock-cut">
+      <rect width="120" height="120" fill="#fff"/>
+      <path d="M55 59 v-6 a5 5 0 0 1 10 0 v6" fill="none" stroke="#000" stroke-width="3.5" stroke-linecap="round"/>
+      <rect x="50" y="58" width="20" height="15" rx="3" fill="#000"/>
+      <circle cx="60" cy="63.5" r="2.1" fill="#fff"/>
+      <line x1="60" y1="65" x2="60" y2="68.6" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+    </mask>
+  </defs>
+  <g mask="url(#lock-cut)">
+    <g stroke="currentColor" stroke-width="7" stroke-linecap="round">
+      <line x1="8" y1="60" x2="112" y2="60"/>
+      <line x1="60" y1="8" x2="60" y2="112"/>
+      <line x1="23.2" y1="23.2" x2="96.8" y2="96.8"/>
+      <line x1="23.2" y1="96.8" x2="96.8" y2="23.2"/>
+    </g>
+    <circle cx="60" cy="60" r="34" fill="none" stroke="currentColor" stroke-width="8"/>
+    <circle cx="60" cy="60" r="19" fill="currentColor"/>
+  </g>
+</svg>

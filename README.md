@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/logo.svg" width="140" alt="KubeSTIG — eight-spoke ship's wheel with a brass padlock hub">
+</p>
+
 # KubeSTIG
 
 **Automated DISA Kubernetes STIG scanning that produces CKL output.**
