@@ -60,10 +60,11 @@ These are deliberate non-goals:
 ## Quick start
 
 ```bash
-# Build (Go 1.25+)
-make linux
-
-# Or download a prebuilt binary from the GitHub Releases page
+# Get the source and build (Go 1.25+ — or see BUILDING.md for a container
+# build that needs no Go install)
+git clone https://github.com/OllieDixonJr/kubestig.git
+cd kubestig
+make build
 
 # Scan the cluster pointed at by ~/.kube/config
 ./kubestig scan
@@ -101,7 +102,7 @@ Open the resulting CKL in STIG Viewer 2.x and it looks identical to what an anal
 
 **Pre-1.0, internal use.** The tool works against kubeadm-provisioned clusters running Kubernetes 1.28+ on Rocky/RHEL 8. STIG content is current as of v2r5 (released 2024). See `UPDATING.md` for the procedure when DISA publishes a new revision.
 
-Build instructions, CI integration, and the GitLab Runner setup that produces release binaries: see `run-compile.md`.
+Build instructions, including a containerized build for hosts without Go: see `BUILDING.md`.
 
 ---
 

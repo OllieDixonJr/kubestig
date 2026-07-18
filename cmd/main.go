@@ -18,7 +18,7 @@ func main() {
 		Short: "KubeSTIG, DISA Kubernetes STIG v2r5 compliance scanner",
 		Long: fmt.Sprintf(
 			"KubeSTIG %s, DISA Kubernetes STIG v2r5 compliance scanner\n"+
-				"Author: %s, Apache 2.0, github.com/kubestig/kubestig\n"+
+				"Author: %s, Apache 2.0, github.com/OllieDixonJr/kubestig\n"+
 				"Scan only. Remediation is out of scope, see STIG Fix Text in CKL output.",
 			version, author,
 		),
@@ -48,7 +48,7 @@ func versionCmd() *cobra.Command {
 			fmt.Printf("KubeSTIG v%s\n", version)
 			fmt.Printf("Author: %s\n", author)
 			fmt.Println("License: Apache 2.0")
-			fmt.Println("Need help? github.com/kubestig/kubestig")
+			fmt.Println("Need help? github.com/OllieDixonJr/kubestig")
 		},
 	}
 }
