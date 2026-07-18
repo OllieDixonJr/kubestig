@@ -1,4 +1,4 @@
-module github.com/kubestig/kubestig
+module github.com/OllieDixonJr/kubestig
 
 go 1.25.0
 

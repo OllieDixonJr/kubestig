@@ -44,14 +44,14 @@ Built binaries stay in the working tree and are gitignored — never commit them
 The `Makefile` invokes:
 
 ```bash
-go build -ldflags "-X main.version=0.1.0" -o kubestig ./cmd/
+go build -ldflags "-X main.version=0.1.0" -o kubestig ./cmd/kubestig
 ```
 
 Cross-compilation is handled by setting `GOOS` and `GOARCH`:
 
 ```bash
-GOOS=linux   GOARCH=amd64 go build -o kubestig     ./cmd/
-GOOS=windows GOARCH=amd64 go build -o kubestig.exe ./cmd/
+GOOS=linux   GOARCH=amd64 go build -o kubestig     ./cmd/kubestig
+GOOS=windows GOARCH=amd64 go build -o kubestig.exe ./cmd/kubestig
 ```
 
 ---

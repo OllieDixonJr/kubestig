@@ -5,8 +5,8 @@ import (
 	"os"
 	"strings"
 
-	"github.com/kubestig/kubestig/pkg/scanner"
-	"github.com/kubestig/kubestig/pkg/stig"
+	"github.com/OllieDixonJr/kubestig/pkg/scanner"
+	"github.com/OllieDixonJr/kubestig/pkg/stig"
 	"github.com/spf13/cobra"
 )
 
